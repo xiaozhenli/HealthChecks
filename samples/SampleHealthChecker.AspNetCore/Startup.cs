@@ -31,7 +31,7 @@ namespace SampleHealthChecker
         {
             // When doing DI'd health checks, you must register them as services of their concrete type
             services.AddSingleton<CustomHealthCheck>();
-
+             
             services.AddHealthChecks(checks =>
             {
                 checks.AddUrlCheck("https://github.com")
